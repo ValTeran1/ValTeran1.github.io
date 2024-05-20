@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar">
+  <ul>
+    <li><a href="welcome.html">Boton</a></li>
+    <li><a href="#AboutUs" onclick="cargarContenido('/Secundarios/AboutUs.html')">¿Quienes somos?</a></li>
+    <li><a href="#Resources" onclick="cargarContenido('/Secundarios/Resources.html')">Recursos y centros de ayuda</a></li>
+    <li><a href="#Chat" onclick="cargarContenido('/Secundarios/Chat.html')">Chat de apoyo y asesoramiento</a></li>
+    <li><a href="#Incidents" onclick="cargarContenido('/Secundarios/Incidents.html')">Registro de incidentes</a></li>
+    <li><a href="#Education" onclick="cargarContenido('/Secundarios/Education.html')">Educación y concientización</a></li>
+    <li><a href="#Security" onclick="cargarContenido('/Secundarios/Security.html')">Seguridad digital</a></li>
+    <li><a href="#Risks" onclick="cargarContenido('/Secundarios/Risks.html')">Test de evaluación</a></li>
+    <li><a href="#Groups" onclick="cargarContenido('/Secundarios/Groups.html')">Grupos de apoyo social</a></li>
+    <li><a href="#Updates" onclick="cargarContenido('/Secundarios/Updates.html')">Actualizaciones de seguridad</a></li>
+  </ul>
+</div>
+
+<div class="content" id="contenido">
+    <div>
+        <h1 class="txt-btn">Botón de emergencia y localización</h1>
+    </div>
+    <div class="boton-rojo">
+        <button class="boton-con-imagen" onclick="window.location.href = 'https://www.gob.mx/911';">
+            <img src="/Imagenes/btn-rojo.png" alt="Mi Imagen">
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

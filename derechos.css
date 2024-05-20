@@ -1,0 +1,58 @@
+/* Estilos para el contenedor */
+body{
+    background-color: #ffe9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px 0; /* Ajusta el padding superior e inferior, sin afectar el izquierdo y derecho */
+}
+
+/* Estilos para los botones en grid */
+.botones-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    gap: 10px; 
+    margin-top: 50px;
+}
+
+.boton-grid {
+    padding: 10px;
+    text-align: center;
+    border: none; /* Quitamos el borde para que sea más limpio */
+    cursor: pointer;
+    width: 150px; /* Ancho fijo para los botones */
+    height: 150px; /* Altura fija para los botones */
+    line-height: 25px; /* Alinea verticalmente el contenido del botón */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+/* Colores para cada botón */
+.boton-verde { background-color: #2ecc71; color: rgb(0, 0, 0); }
+.boton-rojo { background-color: #e74c3c; color: white; }
+.boton-amarillo { background-color: #f1c40f; color: black; }
+.boton-azul { background-color: #3498db; color: white; }
+.boton-gris { background-color: #95a5a6; color: rgb(0, 0, 0); }
+.boton-morado { background-color: #9b59b6; color: white; }
+
+/* Estilo hover */
+.boton-grid:hover {
+    transform: scale(1.1); /* Agranda el botón al hacer hover */
+}
+
+.btn-regresar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Ajusta según sea necesario */
+    left: 20px; /* Ajusta según sea necesario */
+}
+
+.return-icon {
+    width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción */
+}

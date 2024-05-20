@@ -1,0 +1,24 @@
+body{
+    background-image: url("/Imagenes/F.jpeg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.titulo{
+    text-align: center;
+    align-content: center;
+    font-size: 60px;
+    margin-top: 30px;
+    font-weight: bolder;  
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.txt{
+    font-size: 40px;
+    font-weight:bold;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0);
+}

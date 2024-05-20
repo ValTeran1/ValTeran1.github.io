@@ -1,0 +1,55 @@
+body {
+    background-color: #fdfdee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 65px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+.tit {
+    font-size: 55px;
+    font-weight: 200;
+    margin: 5px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.txt {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 16px; /* Espacio entre los botones */
+}
+
+.boton img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 150px;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición */
+    cursor: not-allowed;
+    padding: 33px;
+}
+
+.boton:hover img {
+    transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+}

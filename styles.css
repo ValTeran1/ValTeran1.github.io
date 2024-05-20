@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 25%; /* Ancho del sidebar */
+    background-color: #DDE9F1;
+    overflow-y: auto; /* Hace que el sidebar sea scrollable */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Quita el margen predeterminado */
+}
+
+.sidebar ul li {
+  margin-bottom: 10px; /* Espacio entre los botones */
+  padding-left: 20px;
+  padding-right: 55px;
+}
+
+.sidebar ul li a {
+  display: block; /* Para que los enlaces ocupen toda la altura del contenedor li */
+  width: 100%; /* Para que los enlaces cubran toda la anchura del contenedor li */
+  padding: 15px; /* Espacio interno para hacer clic en los botones */
+  color: #000000; /* Color del texto */
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight:300;
+}
+
+.sidebar ul li a:hover{
+    background-color:rgb(255, 152, 152);
+}
+
+.content {
+  margin-left: 25%; /* Ajuste al mismo ancho de la barra de navegación */
+}
+
+.txt-btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 0%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.boton-rojo {
+  display: flex; /* Para activar el modelo de caja flexible */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: flex-end; /* Alinea el contenido en la parte inferior */
+}
+
+@keyframes pulsar {
+  0% { transform: scale(1); } /* Escala normal */
+  50% { transform: scale(1.1); } /* Escala aumentada */
+  100% { transform: scale(1); } /* Vuelve a la escala normal */
+}
+
+.boton-con-imagen {
+  background-color: transparent;
+  border: none;
+  animation: pulsar 8s infinite; /* Inicia la animación pulsar, con una duración de 3 segundos y se repite infinitamente */
+}
+
+.boton-con-imagen:hover {
+  cursor: pointer;
+  animation: pulsar 0.5s infinite; /* Pausa la animación cuando el cursor está sobre el botón */
+}

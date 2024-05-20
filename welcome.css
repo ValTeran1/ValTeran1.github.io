@@ -1,0 +1,71 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(139, 117, 167);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* Establece el alto del contenedor al 100% del viewport */
+}
+
+.section {
+  flex: 1; /* Hace que las secciones ocupen todo el espacio disponible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: flex-grow 0.3s ease, transform 0.3s ease; /* Transiciones para la animación de crecimiento y transformación */
+  overflow: hidden; /* Evita que el contenido adicional afecte al diseño */
+  max-width: 33%; /* Ajusta el ancho máximo para que haya exactamente tres secciones en una fila */
+  border: none; /* Elimina el borde de los botones */
+  cursor: pointer;
+  background-color: rgb(139, 117, 167)
+}
+
+.section:hover {
+  flex-grow: 2; /* Expande la sección al doble cuando se pasa el ratón por encima */
+  transform: scale(1.5); /* Aumenta el tamaño de la sección */
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.section h2 {
+  font-size: 50px;
+  color: #000000;
+  padding: 50px;
+}
+
+.section p {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 60px;
+}
+
+.section:focus {
+  outline: none; /* Elimina el contorno al hacer foco en el botón */
+}
+
+#logo{
+  max-width: 545px;
+  height: auto;
+}
+
+#violentometro{
+  padding-top: 0px;
+  padding-left: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.vio{
+padding-bottom: 0%;
+font-size: 55px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #000000;
+}

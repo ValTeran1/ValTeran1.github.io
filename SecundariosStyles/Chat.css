@@ -1,0 +1,29 @@
+body{
+    background-color: #F1F1EF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    margin-top: 30px;
+    font-weight: bolder;  
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gt1 {
+    padding-top: 100px;
+    width: 1000px; 
+    height: auto;
+}
